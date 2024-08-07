@@ -21,33 +21,37 @@
         <div class="left-inner">
 <div class="left-heading">
   <h3>Mortgage Calculator</h3>
-  <span>Clear All</span>
+  <span id="clearall">Clear All</span>
 </div>
 <!-- form -->
-<form action="">
+<form id="form" action="">
   <div class="form-group">
     <p>Mortgage Amount</p>
     <div class="form-inner">
       <span>$</span>
-      <input type="text"/>
+      <input id="mortgageamount" type="text"/>
     </div>
+    <small id="error"></small>
   </div>
 
   <div class="form-group2">
   <div class="form-group two">
     <p>Mortgage Term</p>
     <div class="form-inner two first">
-      <input type="text"/>
+      <input id= "mortgageterm" type="text"/>
       <span>Years</span>
     </div>
+    <small id="error"></small>
   </div>
   <div class="form-group two">
     <p>Interest Rate</p>
     <div class="form-inner two second">
-      <input type="text"/>
+      <input id="interestrate" type="text"/>
       <span>%</span>
     </div>
+    <small id="error"></small>
   </div>
+
   </div>
 
 <div class="mortgage-type">
@@ -55,16 +59,18 @@
   <div class="form-group radio">
     <div class="form-radio">
       <div class="dd">
-      <input type="radio" name="hammed" id=""/>
-      <label for="">Repayment</label>
+      <input type="radio" name="hammed" id="repayment"/>
+      <label>Repayment</label>
     </div>
     </div>
     <div class="form-radio">
       <div class="dd">
-      <input type="radio" name="hammed" id="" />
+      <input item type="radio" name="hammed" id="interestonly" />
       <label for="">Interest Only</label>
     </div>
+    
   </div>
+  <small id="error"></small>
 </div>
 </div>
 
@@ -98,12 +104,12 @@
         <div class="result-board">
           <div class="result-total">
             <p>Your monthly repayment</p>
-            <h1>$1,797.74</h1>
+            <h1 id="firstmoney">$1,797.74</h1>
           </div>
 
           <div class="repay-result">
             <p>Total you'll repay over the term</p>
-            <h3>$539,322.94</h3>
+            <h3 id="secondmoney">$539,322.94</h3>
           </div>
         </div>
       </div>
@@ -116,5 +122,8 @@
     Coded by <a href="#">medacoal</a>.
   </div> 
     </main>
+
+    <!-- js link -->
+   <script src="./script.js"></script>
 </body>
 </html>

@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../icons8-british-pound-ios-17-glyph"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "mortgage-repayment-calculator-main",
+		"liveServer.settings.port": 5501
+	}
+}
